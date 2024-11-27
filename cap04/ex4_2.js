@@ -9,10 +9,14 @@ formulario.addEventListener("submit", (e) => {
 
     let peso
     if(masculino) {
-        peso = 22 * Math.pow(altura, 2)
+        peso = 22 * Math.pow(altura, 2);
     } else {
-        peso = 21 * Math(altura, 2)
+        peso = 21 * Math(altura, 2);
     }
 
-    resposta.innerText = `${nome}: Peso Ideal ${peso.toFixed(3)} kg`
+    resposta.innerText = `${nome}: Peso Ideal ${peso.toFixed(3)} kg`;
+
+    formulario.addEventListener("reset", () => {
+        resposta.innerText ='';
+    })
 })
