@@ -6,7 +6,7 @@ frm.addEventListener('submit', (e) =>{
     const numero = Number(frm.inNumero.value);
     let resposta = `Entre ${numero} e 1:`;
     
-    for(let i = 0; i > 0; i--){
+    for(let i = numero; i > 0; i--){
         resposta = resposta + i + ',';
     }
 
